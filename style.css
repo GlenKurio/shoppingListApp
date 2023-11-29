@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  user-select: none;
+}
+
+:root {
+  font-family: "Cabin", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Variables
+  --primary-font: "Cabin", sans-serif;
+
+  --color-black: #432000;
+  --color-gray-100: #fdfdfd;
+  --color-gray-200: #eef0f4;
+  --color-gray-300: #dce1eb;
+  --color-brand: #ac485a;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid var(--color-black);
+  max-width: 600px;
+  padding: 1rem;
+  background-color: var(--color-gray-200);
+}
+
+.cat-img-container {
+  & img {
+    max-width: 200px;
+    display: block;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.addInput {
+  color: var(--color-black);
+  background-color: var(--color-gray-300);
+
+  border: none;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.addButton {
+  color: var(--color-gray-100);
+  background-color: var(--color-brand);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.shopping-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 0;
+}
+.shopping-list-item {
+  background-color: var(--color-gray-100);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 4px;
+  color: var(--color-black);
+  transition: all 0.2s;
+}
+
+.shopping-list-item:active {
+  scale: 0.9;
+}
