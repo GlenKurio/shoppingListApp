@@ -268,7 +268,7 @@ function showUserGreeting(userGreetingEl, user) {
     const userFirstName = displayName.split(" ")[0];
     userGreetingEl.textContent = `Hey ${userFirstName} 👋`;
   } else {
-    userGreetingEl.value = `Hey Friend 👋`;
+    userGreetingEl.textContent = `Hey Friend 👋`;
   }
 }
 
