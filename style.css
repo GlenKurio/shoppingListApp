@@ -82,6 +82,11 @@ body {
   letter-spacing: 1px;
   font-family: inherit;
   font-weight: 800;
+  transition: all 0.2s;
+}
+
+.addButton:active {
+  scale: 0.9;
 }
 
 .shopping-list {
@@ -95,8 +100,9 @@ body {
 .shopping-list-item {
   background-color: var(--color-gray-100);
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 800;
+  text-transform: uppercase;
   border-radius: 4px;
   color: var(--color-black);
   transition: all 0.2s;
@@ -104,4 +110,11 @@ body {
 
 .shopping-list-item:active {
   scale: 0.9;
+}
+
+.empty-list {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-black);
+  font-family: inherit;
 }
