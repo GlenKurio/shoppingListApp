@@ -13,19 +13,109 @@
     />
   </head>
   <body>
-    <section class="container">
-      <div class="cat-img-container">
-        <img src="/cat.png" alt="picture of a cat in a shopping cart" />
+    <section class="logged-out-view" id="logged-out-view">
+      <div class="container">
+        <h1 class="app-title">Add To Cart</h1>
+        <div class="cat-img-container">
+          <img src="/cat.png" alt="picture of a cat in a shopping cart" />
+        </div>
+        <div class="auth-fields-and-buttons" id="login-form">
+          <input
+            class="input"
+            id="email-input"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="password-input"
+            class="input"
+            type="password"
+            placeholder="Password"
+            required
+          />
+
+          <button id="sign-in-btn" class="primary-btn">Sign in</button>
+          <button id="create-account-btn" class="secondary-btn">
+            Create Account
+          </button>
+        </div>
+        <div class="provider-buttons">
+          <button id="sign-in-with-google-btn" class="provider-btn">
+            <img src="/google.png" class="google-btn-logo" />
+
+            <span> Sign in with Google </span>
+          </button>
+        </div>
       </div>
-      <div class="form">
-        <input type="text" id="input" placeholder="bread" class="addInput" />
-        <button id="addButton" class="addButton">Add to Cart</button>
-      </div>
-      <ul class="shopping-list" id="shoppingList">
-        <!-- <li class="shopping-list-item">Bread</li>
-        <li class="shopping-list-item">Clementines</li> -->
-      </ul>
     </section>
+    <section id="create-account-view" class="create-account-view">
+      <div class="container">
+        <h1 class="app-title">Add To Cart</h1>
+        <div class="cat-img-container">
+          <img src="/cat.png" alt="picture of a cat in a shopping cart" />
+        </div>
+        <div class="auth-fields-and-buttons" id="register-form">
+          <input
+            class="input"
+            id="register-email-input"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            id="register-password-input"
+            class="input"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <input
+            id="confirm-register-password-input"
+            class="input"
+            type="password"
+            placeholder="Confirm Password"
+            required
+          />
+
+          <button id="sign-up-btn" class="primary-btn">Sign Up</button>
+          <button id="login-account-btn" class="secondary-btn">Login</button>
+        </div>
+      </div>
+    </section>
+    <section class="logged-in-view" id="logged-in-view">
+      <div class="container">
+        <div class="user-info">
+          <div class="user-creds">
+            <div class="user-avatar-container">
+              <img
+                id="user-avatar"
+                src="/avatar-placeholder.png"
+                alt="user`s avatar"
+              />
+            </div>
+            <div class="user-name">
+              <h1 id="user-greeting"></h1>
+            </div>
+          </div>
+          <button class="secondary-btn" id="log-out-btn">Log out</button>
+        </div>
+        <h2 class="heading">Add some stuff 👇</h2>
+
+        <div class="form">
+          <input
+            type="text"
+            id="input"
+            class="input"
+            placeholder="bread"
+            class="addInput"
+          />
+          <button id="addButton" class="primary-btn">Add to Cart</button>
+        </div>
+        <ul class="shopping-list" id="shoppingList"></ul>
+      </div>
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
